@@ -11,16 +11,17 @@
 # calculates the year the user was born by subtracting their age from the
 # current year (2024)
 
-# Get the user's name (string) and age (integer)
 name = input("Enter your name: ")
 age = int(input("Enter your age: "))
+# Get the user's name (string) and age (integer)
 
-# Calculate the year the user was born
 current_year = 2024
 birth_year = current_year - age
+# Calculate the year the user was born
 
+print(f"Hello, {name}! You were born in {birth_year}.")
 # Print a personalized greeting message
 # The f prefix enables the use of expressions inside curly braces {} within a string .
 # Python evaluates these expressions and replaces the name and age of the user's name
 # and age with their input values.
-print(f"Hello, {name}! You were born in {birth_year}.")
+
