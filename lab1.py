@@ -1,22 +1,26 @@
 # Lab 1: Getting Started with Python
-# CIS 103: Introduction to Programming
+# CIS 103: : Introduction to Programming
 # Instructor: MD Ali
 # Student Name: Romain Tranchant
 # Date: 08/26/2024
 
-# This script is a simple Python program that prints "Hello, welcome to CIS 103"
+# This script prints a personalized greeting message and demonstrates
+# the use of variables and basic data types.
 
-# The print() function is used to display output to the console.
-# The following line of code will print the string "Hello, welcome to CIS 103"
+# The script interacts with the user by first asking for their name and age, then
+# calculates the year the user was born by subtracting their age from the
+# current year (2024)
 
-def main():
-    # The following line of code will print the string "Hello welcome to CIS 103"
-    print("Hello, welcome to CIS 103!")
-    # The print() function is used to display output to the console
+# Get the user's name (string) and age (integer)
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
 
-if __name__ == "__main__":
-    main()
-# This if __name__ == "__main__": block is used to ensure that the main()
-# function is called only when this script is executed directly, and not
-# when it is imported as a module.
-# This line calls the main() function to execute the code within
+# Calculate the year the user was born
+current_year = 2024
+birth_year = current_year - age
+
+# Print a personalized greeting message
+# The f prefix enables the use of expressions inside curly braces {} within a string .
+# Python evaluates these expressions and replaces the name and age of the user's name
+# and age with their input values.
+print(f"Hello, {name}! You were born in {birth_year}.")
